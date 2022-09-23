@@ -1,0 +1,142 @@
+*, ::after, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ecf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.testimonial-grid-container {
+    padding: 50px 20px;
+}
+
+#quote {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    z-index: 1;
+}
+
+.testimonial-1 {
+    background: #7541c8;
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+}
+
+.testimonial-2 {
+    background: #48556a;
+    color: #ffffff;
+
+}
+
+.testimonial-3 {
+    background: #ffffff;
+    color: #48556a;
+}
+
+.testimonial-4 {
+    background: #19212e;
+    color: #ffffff;
+}
+
+.testimonial-5 {
+    background: #ffffff;
+    color: #48556a;
+}
+
+.grid-item {
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 5px 5px 10px -8px #000000; 
+    box-shadow: 5px 5px 10px -8px #000000;
+    font-size: 13px;
+    max-width: 600px;
+}
+
+.grid-item p {
+    opacity: 70%;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+    position: relative;
+}
+
+.header .name {
+    opacity: 100%;
+    font-size: 1rem;
+}
+
+.header img {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #7541c8;
+    margin-right: 10px;
+}
+
+.grid-item h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    z-index: 3;
+    position: relative;
+}
+
+.attribution {
+    margin: 30px 0;
+    text-align: center;
+}
+
+
+@media (min-width: 1024px){
+
+    .testimonial-grid-container,
+    .grid-item-container-left,
+    .grid-item-container-right, 
+    .top, 
+    .bottom {
+        display: flex;
+    }
+
+    .testimonial-grid-container {
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 100px 20px;
+    }
+
+    .grid-item-container-left {
+        flex-direction: column;
+        flex-basis: 75%;
+    }
+
+    .grid-item-container-left .grid-item {
+        margin-right: 20px;
+    }
+
+    .grid-item-container-right {
+        flex-basis: 25%;
+    }
+
+    .top, .bottom {
+        flex-basis: 50%;
+    }
+
+    .testimonial-1, .testimonial-4 {
+        flex-basis: 65%;
+    }
+
+    .testimonial-2, .testimonial-3 {
+        flex-basis: 35%;
+    }
+
+}
